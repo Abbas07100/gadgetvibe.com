@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Gadgetvibe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+    <style>
+      /* Basic styling for the page */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .product-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: box-shadow 0.3s;
+      }
+      .product-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+      .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .product-info {
+        padding: 15px;
+        text-align: center;
+      }
+      .product-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .product-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .product-price {
+        font-size: 16px;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
+      .buy-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .buy-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Products</h1>
+      <div class="products">
+        <div class="product-card">
+          <img
+            src="images 2/product 1.jpg"
+            alt="Product 1"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h3 class="product-name">Automatic Sewing Needle Threader</h3>
+            <p class="product-description"></p>
+            <p class="product-price">₹149 <s>₹199</s></p>
+            <a href="https://amzn.to/3Nld4hz" class="buy-button">Buy Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="images 2/product 2.jpg"
+            alt="Product 2"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h3 class="product-name">Romantic Tulip Night Light</h3>
+            <p class="product-price">₹399 <s>₹1499</s></p>
+            <a href="https://amzn.to/3zWUeu1" class="buy-button">Buy Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

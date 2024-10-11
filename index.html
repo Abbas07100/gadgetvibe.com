@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GadgetVibe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/icon.png" alt="Logo" />
+      </div>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="cart-icon">
+        <a href="#">🛒</a>
+      </div>
+      <nav class="navbar">
+        <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-0"></nav>
+        <div class="navbar-brand"></div>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="webpages/products.html">Products</a></li>
+            <li><a href="webpages/home.html" target="_blank">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+      <h1>Shop the Latest Trends</h1>
+      <p>Discover unique products that fit your style.</p>
+      <button>Explore Now</button>
+    </section>
+
+    <section class="product-gallery">
+      <h2>Featured Products</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/product 1.jpg" alt="Product 1" />
+          <h3>Automatic Sewing Needle Threader</h3><br>
+          <p>₹149 <s>₹199</s></p><br>
+          <a href="https://amzn.to/4dFqgZu"><button>Buy Now</button></a
+          >
+        </div>
+        <div class="gallery-item">
+          <img src="images/product 2.jpg" alt="Product 2" />
+          <h3>Romantic Tulip Night Light</h3><br>
+          <p>₹399 <s>₹1499</s></p><br>
+          <a href="https://amzn.to/3zWUeu1">
+            <button>Buy Now</button></a
+          >
+        </div>
+        </section>
+
+    <footer>
+      <p>&copy; 2024 Creative E-Commerce. All rights reserved.</p>
+    </footer>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+      });
+  </script>
+  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+  
+  
+  
+  </script>
+  <script>
+  const navbar = document.getElementById("main-navbar")
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 0) {
+      navbar.classList.add("navbar-after-scroll")
+    } else {
+      navbar.classList.remove("navbar-after-scroll")
+    }
+  })
+  </script>
+  
+  </body>
+</html>
