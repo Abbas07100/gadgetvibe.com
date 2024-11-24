@@ -1,131 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GadgetVibe</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/icon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/icon.png" alt="Logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GadgetVibe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/icon.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/icon.png" alt="Logo" />
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="cart-icon">
+      <a href="#">🛒</a>
+    </div>
+    <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-0">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="webpages/products.html">Products</a></li>
+        <li><a href="webpages/home.html" target="_blank">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Shop the Latest Trends</h1>
+    <p>Discover unique products that fit your style.</p>
+    <button>Explore Now</button>
+  </section>
+
+  <section class="product-gallery">
+    <h2>Featured Products</h2>
+    <div class="gallery-grid">
+      <!-- Product 1 -->
+      <div class="gallery-item">
+        <img src="images/product7.jpg" alt="Heavy Duty Appliances Roller" />
+        <h3>Heavy Duty Appliances Roller</h3>
+        <p>₹979 <s>₹2,499</s></p>
+        <a href="https://amzn.to/3Z3vtov" class="buy-button">Buy Now</a>
       </div>
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
+      <!-- Product 2 -->
+      <div class="gallery-item">
+        <img src="images/product3.jpg" alt="Multi-Functional Foam Cleaner" />
+        <h3>Multi-Functional Foam Cleaner</h3>
+        <p>₹700 <s>₹1,138</s></p>
+        <a href="https://amzn.to/3YzXtkQ" class="buy-button">Buy Now</a>
       </div>
-      <div class="cart-icon">
-        <a href="#">🛒</a>
+      <!-- Product 3 -->
+      <div class="gallery-item">
+        <img src="images/41x-mcbzCIL.jpg" alt="Portable Folding Clothes Hangers" />
+        <h3>Portable Folding Clothes Hangers</h3>
+        <p>₹699 <s>₹999</s></p>
+        <a href="https://amzn.to/3Y3PdYP" class="buy-button">Buy Now</a>
       </div>
-      <nav class="navbar">
-        <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-0"></nav>
-        <div class="navbar-brand"></div>
-        <ul class="nav-links">
-            <li><a href="">Home</a></li>
-            <li><a href="webpages/products.html">Products</a></li>
-            <li><a href="webpages/home.html" target="_blank">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </header>
+      <!-- Product 4 -->
+      <div class="gallery-item">
+        <img src="images/product1.jpg" alt="Automatic Sewing Needle Threader" />
+        <h3>Automatic Sewing Needle Threader</h3>
+        <p>₹149 <s>₹199</s></p>
+        <a href="https://amzn.to/4dFqgZu" class="buy-button">Buy Now</a>
+      </div>
+      <!-- Product 5 -->
+      <div class="gallery-item">
+        <img src="images/product2.jpg" alt="Romantic Tulip Night Light" />
+        <h3>Romantic Tulip Night Light</h3>
+        <p>₹399 <s>₹1,499</s></p>
+        <a href="https://amzn.to/3zWUeu1" class="buy-button">Buy Now</a>
+      </div>
+      <!-- Product 6 -->
+      <div class="gallery-item">
+        <img src="images/Earphone.jpg" alt="Mvc Enterprise Ultrapods 2 Pro" />
+        <h3>Mvc Enterprise Ultrapods 2 Pro</h3>
+        <p>₹699 <s>₹1,499</s></p>
+        <a href="https://amzn.to/3NZyvFl" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="hero">
-      <h1>Shop the Latest Trends</h1>
-      <p>Discover unique products that fit your style.</p>
-      <button>Explore Now</button>
-    </section>
+  <footer>
+    <p>&copy; 2024 Creative E-Commerce. All rights reserved.</p>
+  </footer>
 
-    <section class="product-gallery">
-      <h2>Featured Products</h2>
-            <div class="gallery-grid">
-               <div class="gallery-item">
-          <img src="images/product 7.jpg" alt="Product 6" />
-          <h3>Heavy Duty Appliances Roller</h3><br>
-          <p>₹979 <s> ₹2,499</s></p><br>
-          <a href="https://amzn.to/3Z3vtov">
-            <button>Buy Now</button></a
-          >
-        </div>
-                <div class="gallery-item">
-          <img src="images/product 3.jpg" alt="Product 5" />
-          <h3>Multi-Functional Foam Cleaner </h3><br>
-          <p>₹700 <s>₹1,138</s></p><br>
-          <a href="https://amzn.to/3YzXtkQ"><button>Buy Now</button></a
-          >
-        </div>
-            </div>
-            <div class="gallery-grid">
-         <div class="gallery-item">
-          <img src="images/41x-mcbzCIL.jpg" alt="Product 4" />
-          <h3>Portable Folding Clothes Hangers</h3><br>
-          <p>₹699 <s>₹999</s></p><br>
-          <a href="https://amzn.to/3Y3PdYP">
-            <button>Buy Now</button></a
-          >
-        </div>
-
-        <div class="gallery-item">
-          <img src="images/product 1.jpg" alt="Product 3" />
-          <h3>Automatic Sewing Needle Threader</h3><br>
-          <p>₹149 <s>₹199</s></p><br>
-          <a href="https://amzn.to/4dFqgZu"><button>Buy Now</button></a
-          >
-        </div>
-        <div class="gallery-item">
-          <img src="images/product 2.jpg" alt="Product 2" />
-          <h3>Romantic Tulip Night Light</h3><br>
-          <p>₹399 <s>₹1499</s></p><br>
-          <a href="https://amzn.to/3zWUeu1">
-            <button>Buy Now</button></a
-          >
-        </div>
-        <div class="gallery-item">
-          <img src="images/Earphone.jpg" alt="Product 1" />
-          <h3>Mvc Enterprise Ultrapods 2 Pro Tws Earbud</h3><br>
-          <p>₹699 <s> ₹1499</s></p><br>
-          <a href="https://amzn.to/3NZyvFl">
-            <button>Buy Now</button></a
-          >
-        </div>
-            </div>
-        </section>
-
-    <footer>
-      <p>&copy; 2024 Creative E-Commerce. All rights reserved.</p>
-    </footer>
-    <script>
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.nav-links');
-
-      hamburger.addEventListener('click', () => {
-          navLinks.classList.toggle('open');
-      });
-  </script>
-  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
-
-  <!-- Custom scripts -->
-  <script type="text/javascript">
-  
-  
-  
-  </script>
   <script>
-  const navbar = document.getElementById("main-navbar")
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-  window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 0) {
-      navbar.classList.add("navbar-after-scroll")
-    } else {
-      navbar.classList.remove("navbar-after-scroll")
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    const navbar = document.getElementById("main-navbar");
+    if (navbar) {
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("navbar-after-scroll");
+        } else {
+          navbar.classList.remove("navbar-after-scroll");
+        }
+      });
     }
-  })
   </script>
-  
-  </body>
+</body>
 </html>
